@@ -1,0 +1,24 @@
+APLIKACJA TRASY TURYSTYCZNE:
+
+- kolekcja POI. 
+- każdy POI ma:
+	- Nazwę
+	- Opis
+	- Punkt (koordynaty google maps)
+	- Ocena (gwiazdki)
+	- Komentarze?
+	- Tagi
+- POI wyświetlają się na mapie
+- Można podać miejsce, wtedy pojawią się POI w jakimś obszarze
+- Zbiór to jest trasa. Trasy można zapisywać po zalogowaniu.
+- Logowanie z facebooba, twittera, gmaila i wszystkich świętych.
+
+
+MODELE:
+- POI (has many POI, has many Tags, has many Oceny)
+- Users (has many POIs, has many Trasy)
+- Tagi (has many POI)
+- Oceny 
+- Trasy (has many POI, references User)
+
+Bootstrap CSS
